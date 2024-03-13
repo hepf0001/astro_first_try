@@ -1,0 +1,42 @@
+---
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Nav/>
+		<h1>Astro</h1>
+		<h2>Underoverskrift</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo harum libero similique delectus suscipit quidem mollitia dignissimos inventore laboriosam voluptas eveniet veniam iure sint doloribus, ullam illo rem a. Laboriosam.</p>
+		<main>
+	
+			<Card header="Hej jorden" text="Jorden er den tredje planet i vores solsystem og er hjemsted for et mangfoldigt økosystem med en rig biodiversitet. Det er den eneste kendte planet, der understøtter liv.">
+			<img src="/billede1.jpg" alt="billede1">
+			</Card>
+			<Button variant="primary" size="small">Knap</Button>
+			<Card header="Hej univers" text="Universet er hele rummet og alt, hvad der findes i det, herunder planeter, stjerner, galakser, mørkt stof og energi. Det strækker sig ud over vores synlige horisont og er objekt for astronomisk forskning og spekulation.">
+				<img src="/billede2.jpg" alt="billede2">
+				</Card>
+				<Button variant="secondary" size="medium">Read more</Button>
+			<Card header="Hej Mars" text="Mars er den fjerde planet fra Solen og er blevet studeret som et potentiale for fremtidig menneskelig kolonisering. Det er kendt for sin røde farve på grund af jernoxid på overfladen og har været genstand for talrige rummissioner.">
+				<img src="/billede3.jpg" alt="billede3">
+				</Card>
+				<Button variant="primary" size="large">Link</Button>
+			<Card header="Hej galakse" text="En galakse er en enorm samling af stjerner, gas, støv og mørkt stof, der holdes sammen af gravitation. Vores egen galakse, Mælkevejen, er et eksempel på dette, og der er milliarder af andre galakser i universet, der udgør dets væv.">
+				<img src="/billede4.jpg" alt="billede4">
+				</Card>
+				<Button variant="secondary" size="small">Klik her</Button>
+
+		</main>
+	</body>
+</html>

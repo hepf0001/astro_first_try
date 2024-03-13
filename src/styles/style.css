@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 600px; /* Sætter den maksimale bredde på billedet til 600px */
+  max-height: 600px; /* Sætter den maksimale højde på billedet til 600px */
+  width: auto; /* Sørger for, at bredden justeres automatisk for at opretholde aspektforholdet */
+  height: auto;
+}
+
+h1 {
+  color: hotpink;
+}
+
+h2 {
+  color: hotpink;
+}
