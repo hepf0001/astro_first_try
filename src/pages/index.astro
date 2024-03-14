@@ -1,25 +1,10 @@
 ---
 import Card from "../components/Card.astro";
-import Nav from "../components/Nav.astro";
-import "../styles/style.css";
 import Button from "../components/Button.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Nav/>
-		<h1>Astro</h1>
-		<h2>Underoverskrift</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo harum libero similique delectus suscipit quidem mollitia dignissimos inventore laboriosam voluptas eveniet veniam iure sint doloribus, ullam illo rem a. Laboriosam.</p>
-		<main>
-	
+<MainLayout title="Hjem">
 			<Card header="Hej jorden" text="Jorden er den tredje planet i vores solsystem og er hjemsted for et mangfoldigt økosystem med en rig biodiversitet. Det er den eneste kendte planet, der understøtter liv.">
 			<img src="/billede1.jpg" alt="billede1">
 			</Card>
@@ -36,7 +21,4 @@ import Button from "../components/Button.astro";
 				<img src="/billede4.jpg" alt="billede4">
 				</Card>
 				<Button variant="secondary" size="small">Klik her</Button>
-
-		</main>
-	</body>
-</html>
+			</MainLayout>
